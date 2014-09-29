@@ -1,3 +1,9 @@
+# custom
+secret.py
+secret.pyc
+db.json
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,0 +1,83 @@
+#my-awesome-dropzone {
+    min-height: 0px;
+    height: 150px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+div.dz-preview.dz-file-preview {
+    margin: 5px;
+}
+
+#call-to-action-video-upload {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+section#services {
+    padding-top: 100px;
+}
+
+div.dz-preview div.dz-details {
+    height: 50px !important;
+}
+
+div.intro-text {
+    padding-top: 20%;
+}
+
+header {
+    background-image: url(../img/camobama-reduced.jpg) !important;
+}
+
+button.btn.btn-xl.submit {
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+}
+
+div.row.text-center.form {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#owl-carousel-videos {
+    text-align: center;
+}
+
+#owl-carousel-videos video {
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#owl-carousel-videos table {
+    margin-bottom: 0px;
+}
+
+#owl-carousel-videos th.questionnaire.yes-no,
+#owl-carousel-videos td.questionnaire.yes-no
+{
+    text-align: center;
+}
+
+#owl-carousel-videos table.questionnaire {
+    font-size: 11px;
+}
+
+#owl-carousel-videos th.questionnaire.theme,
+#owl-carousel-videos td.questionnaire.theme
+{
+    padding-right: 0px;
+}
+
+#owl-carousel-videos div.col-md-1 {
+    width: 10% !important;
+}
+#owl-carousel-videos div.col-md-2 {
+    width: 20% !important;
+}
