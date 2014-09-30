@@ -45,39 +45,61 @@ div.row.text-center.form {
     margin-bottom: 10px;
 }
 
-#owl-carousel-videos {
+#video-feedback {
     text-align: center;
 }
 
-#owl-carousel-videos video {
+#video-feedback video {
     height: 300px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-#owl-carousel-videos table {
+#video-feedback table {
     margin-bottom: 0px;
 }
 
-#owl-carousel-videos th.questionnaire.yes-no,
-#owl-carousel-videos td.questionnaire.yes-no
+#video-feedback th.questionnaire.yes-no,
+#video-feedback td.questionnaire.yes-no
 {
     text-align: center;
 }
 
-#owl-carousel-videos table.questionnaire {
-    font-size: 11px;
+#video-feedback table.questionnaire {
+    font-size: 12px;
 }
 
-#owl-carousel-videos th.questionnaire.theme,
-#owl-carousel-videos td.questionnaire.theme
+#video-feedback th.questionnaire.theme,
+#video-feedback td.questionnaire.theme
 {
     padding-right: 0px;
 }
 
-#owl-carousel-videos div.col-md-1 {
+#video-feedback div.col-md-1 {
     width: 10% !important;
 }
-#owl-carousel-videos div.col-md-2 {
+#video-feedback div.col-md-2 {
     width: 20% !important;
+}
+#video-feedback div.col-md-8 {
+    width: 80% !important;
+}
+#video-feedback div.col-md-4 {
+    width: 40% !important;
+}
+
+#video-feedback td.questionnaire.answer
+{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#video-feedback textarea.freetext-feedback {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+#video-feedback button.feedback {
+    height: 35px;
+    margin-top: 5px;
 }

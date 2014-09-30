@@ -687,6 +687,15 @@
                     addRemoveLinks: true
                     });
 
+        myDropzone.on("success", function(file,responseText) {
+            var url = '/randomvid';
+            var jsonToSend = escape(JSON.stringify({'initial-video':responseText, 'videos-seen':[responseText]}))
+            var form = $('<form action="' + url + '" method="post">' +
+              '<input type="text" name="videos-history" value="' + jsonToSend + '" />' +
+              '</form>');
+            $('body').append(form);  // This line is not necessary
+            $(form).submit();
+        });
 
         $(document).ready(function() {
                 $('#submitVideo').attr('disabled','disabled');
