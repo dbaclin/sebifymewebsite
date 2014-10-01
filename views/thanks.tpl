@@ -19,7 +19,7 @@
 
             Thanks for uploading video {{video_uploaded}}<br>
 
-            Give this link to people: <a href='./static/uploaded-content/joke.mp4'>Provide feedback</a>
+            Give this link to people: <a href='./static/uploaded-content/{{video_uploaded}}'>Provide feedback</a>
 
      </body>
    </html>

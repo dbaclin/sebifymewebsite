@@ -689,9 +689,10 @@
 
         myDropzone.on("success", function(file,responseText) {
             var url = '/randomvid';
-            var jsonToSend = escape(JSON.stringify({'initial-video':responseText, 'videos-seen':[responseText]}))
+            var jsonToSend = escape(JSON.stringify([responseText]))
             var form = $('<form action="' + url + '" method="post">' +
-              '<input type="text" name="videos-history" value="' + jsonToSend + '" />' +
+              '<input type="text" name="initial-video" value="' + responseText + '" />' +
+              '<input type="text" name="videos-seen" value="' + jsonToSend + '" />' +
               '</form>');
             $('body').append(form);  // This line is not necessary
             $(form).submit();

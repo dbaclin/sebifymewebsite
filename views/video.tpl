@@ -66,13 +66,34 @@
                 </div>
 
             </div>
+        <script src="js/jquery-1.11.0.js"></script>
 
-
-        <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
         <script>
+            $('#submit-feedback').click(function() {
+               var url = '/randomvid';
+               var radios = escape($("input[type='radio']").serialize());
+               var textarea = escape($("textarea").val());
 
+               var form = $('<form action="' + url + '" method="post">' +
+              '<input type="text" name="initial-video" value="{{initial_video}}" />' +
+              '<input type="text" name="videos-seen" value="{{videos_seen}}" />' +
+              '<input type="text" name="reviewed-video" value="{{reviewed_video}}" />' +
+              '<input type="text" name="feedback-radios" value="' + radios + '" />' +
+              '<input type="text" name="feedback-textarea" value="' +textarea+ '" />' +
+              '</form>');
+            $('body').append(form);  // This line is not necessary
+            $(form).submit();
+            })
+
+
+            $('#i-am-done').click(function() {
+            var url = './thanks/{{initial_video}}';
+            window.location.href = url;
+
+            })
 
         </script>
+
 
      </body>
    </html>

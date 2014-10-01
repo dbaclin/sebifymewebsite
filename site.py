@@ -144,30 +144,34 @@ def show_videos():
     import json
     import urllib
 
-    videos_history = request.forms.get('videos-history')
-    for k in request.forms.keys():
-        print k, request.forms[k]
+    initial_video = request.forms.get('initial-video',default=None)
 
-    if videos_history == None:
-        print "no history"
-    else:
-        print json_loads(urllib.unquote(videos_history))
+    videos_seen = json.loads(urllib.unquote(request.forms.get('videos-seen',default=None)))
+
+    reviewed_video = request.forms.get('reviewed-video',default=None)
+    if reviewed_video != None:
+        videos_seen.append(reviewed_video)
+
+    print request.forms.get('feedback-radios')
+    print request.forms.get('feedback-textarea')
 
     videosTable = db.table('videos')
     allVideos = map(lambda x: x['key'],  videosTable.all())
-    alreadySeenVideos = []
-    allVideos = list(set(allVideos) - set(alreadySeenVideos))
+
+    allVideos = list(set(allVideos) - set(videos_seen))
     if len(allVideos) > 0:
         random_video = random.sample(allVideos,1)[0]
         video_url = videosTable.get(where('key')==random_video)['values']['location']
-        website_content = template('video',video_url=video_url)
+
+        website_content = template('video',video_url=video_url,initial_video=initial_video,reviewed_video=random_video,videos_seen=urllib.quote(json.dumps(videos_seen)))
+
         return website_content
     else:
         return template('index')
 
-@route('/thanks',method='POST')
-def thanks():
-    return template('thanks')
+@route('/thanks/<video_uploaded>')
+def thanks(video_uploaded):
+    return template('thanks',video_uploaded=video_uploaded)
 
 def send_email(email_address, content):
 
