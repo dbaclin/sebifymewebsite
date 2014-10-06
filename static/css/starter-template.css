@@ -1,0 +1,191 @@
+
+
+body {
+  	padding-top: 50px;
+    overflow-x: hidden;
+    font-family: "Open Sans" ,"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: rgb(234, 235, 242);
+    height:100%;
+}
+
+.navbar {
+
+	background-color: rgb(11, 16, 26);
+	color:rgb(234, 235, 242);;
+}
+
+.navbar-brand{
+
+	padding: 5px;
+	
+}
+
+.navbar-brand img{
+
+	
+	height: 40px;
+}
+
+
+.navbar-nav {
+	float: right;
+
+} 
+
+.starter-template {
+  	padding: 40px 15px;
+  	text-align: center;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+
+
+
+.jumbotron {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:500px;
+    width: 100%;
+}
+
+
+.jumbotron h1 {
+	font-size: 45px;
+	text-align: left;
+	padding-top: 275px;
+	padding-left: 25%;
+}
+
+
+.jumbotron h2 {
+	font-size: 35px;
+	font-style: italic;
+	text-align: right;
+	padding-right: 25%;
+}
+
+.jumbotron .container {
+    padding-top: 150px;
+}
+
+.approach {
+	font-family: "Montserrat" ,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.approach img {
+	height: 80px;
+	margin-bottom: 20px;
+
+}
+
+.approach p {
+	font-size: 23px;
+	margin-top:10px;
+}
+
+
+
+.nextstep img { 
+    width: 2em
+}
+
+
+
+#upload-page-content, #feedback-page-content {
+	background-color: white;
+	height: 100%;
+}
+
+
+
+#instructions {
+	padding-top: 10px;
+	text-align: left;
+	font-size: 20px;
+	
+}
+
+
+#btn_to_upload {
+	text-align: right;
+	margin-left: 76%;
+
+}
+
+
+#row-button {
+	margin-top: 30px;
+	text-align: right;
+
+}
+
+
+#btn_row {
+	padding-top: 20px;
+
+}
+
+
+#page_logo {
+
+	float: left;
+
+}
+
+
+#row-banner {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+#row-banner img{
+	margin-right: 30px;
+	height: 80px;
+
+}
+#row-banner h1{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#row-banner .lead {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#rating p{
+
+	font-size: 20px;
+}
+
+#rating .rating{
+
+	height: 40px;
+	padding-bottom: 30px;
+}
+
+#total-rating {
+	font-weight: bold;
+	padding-bottom: 0px;
+	padding-top: 75px;
+}
+
+#video-container{
+
+	height: 400px;
+}
+
+#feedback-page h2 {
+	font-size: 25px;
+
+}
